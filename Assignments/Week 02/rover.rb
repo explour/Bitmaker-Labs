@@ -32,10 +32,10 @@ class Rover
 	private
 	def move
 		case direction
-		when "N" then self.y = y + 1
-		when "W" then self.x = x - 1
-		when "S" then self.y = y - 1
-		when "E" then self.x = x + 1
+		when "N" then @y += 1
+		when "W" then @x -= 1
+		when "S" then @y -= 1
+		when "E" then @x += 1
 		end
 	end
 
@@ -43,17 +43,17 @@ class Rover
 		case direction_input
 		when "L"
 			case direction
-			when "N" then self.direction = "W"
-			when "W" then self.direction = "S"
-			when "S" then self.direction = "E"
-			when "E" then self.direction = "N"
+			when "N" then @direction = "W"
+			when "W" then @direction = "S"
+			when "S" then @direction = "E"
+			when "E" then @direction = "N"
 			end
 		when "R"
 			case direction
-			when "N" then self.direction = "E"
-			when" W" then self.direction = "N"
-			when "S" then self.direction = "W"
-			when "E" then self.direction = "S"
+			when "N" then @direction = "E"
+			when" W" then @direction = "N"
+			when "S" then @direction = "W"
+			when "E" then @direction = "S"
 			end
 		end
 
