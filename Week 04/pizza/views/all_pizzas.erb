@@ -1,0 +1,4 @@
+THIS SHOWS ALL OF THE PIZZAS!
+<% @@pizza_collection.each do |x| %>
+		<li><%= x.type + " " + x.size + " " + x.price%></li>
+<% end %>

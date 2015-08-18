@@ -1,0 +1,21 @@
+<html>
+<head>
+
+</head>
+
+<body>
+	<h1>TESTING!</h1>
+	<ol>
+
+	<% @var.each do |x| %>
+		<li><%= x %></li>
+	<% end %>
+
+	<% @var2.each do |x, y| %>
+		<li> <%= x.to_s + y %> </li>
+	<% end %>
+
+	</ol>
+</body>
+
+</html>
